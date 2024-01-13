@@ -20,6 +20,11 @@ Array.from(buttons).forEach((button)=>{
                 string = '';
                 document.querySelector('input').value = string;
             }
+            else if(e.target.innerHTML == '÷')
+            {
+                string = string + '/';
+                document.querySelector('input').value = string;
+            }
             else if(e.target.innerHTML == '+/-')
             {
                 if(string[0] == '-')
